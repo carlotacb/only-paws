@@ -12,6 +12,8 @@ module.exports = app => {
 
     // Create new user profile
     app.post('/user/create', (req, res) => {
+        // Parse the request
+     
         // Save to the db
 
         return res.status(200).send('Profile created')
