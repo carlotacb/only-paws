@@ -6,15 +6,20 @@ import { InputTextarea } from 'primereact/inputtextarea';
 
 
 const Login = () => {
+
+  const handleSubmit =() =>{
+
+  }
   return (
-    <div className='login-container'>
+    <form className='login-container'>
       <Image src={Logo} alt="logo" height={100} width={180}/>
       <div  className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>
-        <InputTextarea className ="login-input" rows={2} cols={40} value="Type in your Username" onChange=""/>
-        <InputTextarea className ="login-input" rows={2} cols={40} value="Type in your Username" onChange=""/>
-        <Button class="login-btn" label="Submit"  onClick=""/>
+        <InputTextarea className ="login-input" rows={2} cols={40} value="Type in your Email" onChange="" required/>
+        <InputTextarea className ="login-input" rows={2} cols={40} value="Password goes here" onChange="" required/>
+        <Button class="login-btn" label="Submit"  onClick={handleSubmit}/>
+   
       </div>
-      </div>
+      </form>
   )
 }
 

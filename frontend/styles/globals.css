@@ -20,6 +20,7 @@ a {
 
 .header-container{
   margin: auto;
+  width: 100%;
   padding-left: 10;
   padding-right: 10;
 }
@@ -30,6 +31,13 @@ a {
   margin-right: 0;
   position: relative;
   background-color: #CCD5AE;
+  padding: 0%;
+}
+
+.navbar-logo{
+  padding: 0;
+  margin-left: 2rem;
+
 }
 .btn-container{
   display:flex;
@@ -80,12 +88,119 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
-  height: 80%;
+  height: 100%;
   
   
 
 }
 
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10rem;
+
+  
+}
+
+.pi-instagram{
+  transition: transform .2s; 
+}
+
+.pi-instagram :hover{
+  transform: scale(1.5);
+}
+
+.profile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.card-container{
+  width: 362px;
+  height: 604px;
+  margin: 3rem;
+  left: 489px;
+  top: 228px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: fill;
+  flex-direction: column;
+  
+
+background: #FAEDCD;
+border-radius: 44px;
+}
+
+.btn-container-card{
+  border-radius: 100%;
+}
+
+.btn-card{
+  border-radius: 50%;
+  border: none;
+  z-index: 100;
+  position:absolute;
+}
+
+
+
+
+.footer-text{
+  font-size: 10px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-container{
+  display: flex;
+  flex-direction: row;
+  
+  margin-top: 20 rem;
+  height: 90%;
+
+}
+
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.right{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.checkbox{
+  color: black;
+  margin-bottom: 10 rem;
+
+}
+
+.radio-btn{
+  display: flex;
+  flex-direction: row;
+}
+
+.signup-p{
+  size: 12px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
 
 
 .login-box{
@@ -110,6 +225,7 @@ a {
   justify-content: bottom;
   align-items: center;
   margin: 1rem;
+  opacity: 0.5;
 
 }
 

@@ -8,9 +8,10 @@ import Footer from './Footer';
 const Layout = ({children}) => {
     return (
         <>
-            
             <Header/>
             {children}
+            <Footer style={{fontSize:"3rem"}}/>
+            <p className="footer-text">OnlyPaws 2022</p>
         </>
       )
 }

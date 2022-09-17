@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Card from '../../components/card';
+import Image from 'next/image'
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <div className='profile-container'>
+
+      <Card/>
+    </div>
   )
 }
 
