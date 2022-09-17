@@ -15,6 +15,69 @@ a {
   box-sizing: border-box;
 }
 
+.header-container{
+  margin: auto;
+  padding-left: 10;
+  padding-right: 10;
+}
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 18px;
+  margin-right: 0;
+  position: relative;
+  background-color: #CCD5AE;
+}
+.btn-container{
+  display:flex;
+  justify-content: space-between;
+  margin-right: 0;
+}
+.profile-icon{
+  font-size: 25px;
+  color: gray;
+  cursor: pointer;
+  position: right;
+  transition: transform .4s ease;
+  border: none;
+  background-color: transparent;
+  margin: 5px;
+
+
+}
+.logout-icon{
+  font-size: 25px;
+  color: gray;
+  cursor: pointer;
+  position: flex-end;
+  transition: transform .4s ease;
+  border: none;
+  background-color: transparent;
+  margin-left: 5px;
+
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding:10px;
+  width: 100%;
+}
+
+#header{
+  position: relative;
+  margin: 0 auto 0 !important;
+  padding-top: 0px;
+  background-color: #CCD5AE;
+  width: 100%;
+
+}
+
+#header h1{
+  margin: 0px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
