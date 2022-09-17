@@ -42,6 +42,11 @@ a {
   justify-content: space-between;
   margin-right: 0;
 }
+
+#column1 {
+  margin-top: 13.75rem;
+}
+
 .profile-icon{
   font-size: 25px;
   color: gray;
