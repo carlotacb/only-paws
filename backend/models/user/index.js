@@ -8,18 +8,18 @@ async function login({username, password}) {
     if (!user) {
         throw new Error(`Username "${username}" not found`)
     }
-    const encryptedLoginPassword = encryptPassword(password)
-    if (encryptedLoginPassword !== user.password) {
+    // const encryptedLoginPassword = encryptPassword(password)
+    if (password !== user.password) {
         throw new Error(`Incorrect password for username "${username}"`)
     }
     return user
 }
 
-function encryptPassword(password) {
+/* function encryptPassword(password) {
     return crypto.createHmac('sha256', config.secretKey)
         .update(password)
         .digest('hex')
-}
+} */
 
 module.exports = {
     login: login,

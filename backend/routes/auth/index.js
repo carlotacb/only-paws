@@ -1,8 +1,9 @@
 const userModule = require('../../models/user')
 const errors = require('../../models/error')
+const f = require('../util').wrapAsyncRouterFunction
 
 module.exports = app => {
-    app.post('/api/login', f(async function (req, res) {
+    app.post('/login', f(async function (req, res) {
         const password = req.body.password
         const username = req.body.username.toLowerCase()
 
