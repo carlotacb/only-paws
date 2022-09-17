@@ -184,9 +184,14 @@ border-radius: 44px;
 }
 
 .checkbox{
-  color: black;
-  margin-bottom: 10 rem;
+  display: flex;
+  margin-right: 2rem;
+}
 
+.checkbox-div{
+  display: flex;
+  color: black;
+  margin: 2rem;
 }
 
 .radio-btn{
@@ -201,6 +206,9 @@ border-radius: 44px;
   margin: 0;
 }
 
+.radio{
+  margin: 10px;
+}
 
 .login-box{
 
