@@ -1,10 +1,13 @@
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+  background-color: #FEFAE0;
+  }
+
 
 a {
   color: inherit;
@@ -63,6 +66,62 @@ a {
   margin: 0;
   padding:10px;
   width: 100%;
+}
+.layout-container{
+  background-color: #FEFAE0;
+
+  
+}
+
+.login-container{
+  
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  height: 80%;
+  
+  
+
+}
+
+
+
+.login-box{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 643px;
+  height: 80%;
+  border-radius: 11px;
+}
+
+.login-input{
+  outline: none;
+  background-color: #FAEDCD;
+  border-radius: 5px;
+  border:none;
+  color:#46494C;
+  display: flex;
+  justify-content: bottom;
+  align-items: center;
+  margin: 1rem;
+
+}
+
+.login-btn{
+  background-color: #CCD5AE;
+  display: flex;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  height: 100 px;
+  width: 200 px;
+
 }
 
 #header{
