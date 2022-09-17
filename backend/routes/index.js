@@ -4,7 +4,7 @@ module.exports = app => {
 
     app.use(bodyParser.json({limit: '10mb'}))
 
-    require('./auth')(app)
+    // require('./auth')(app)
 
     app.get('/', function (req, res) {
         return res.send({status: 'up'})
