@@ -114,17 +114,20 @@ a {
 
 .profile-container{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 
 
 }
 
-.card-container{
+
+
+.card-container-right{
   width: 362px;
   height: 604px;
   margin: 3rem;
-  left: 489px;
+  
   top: 228px;
   display: flex;
   justify-content: center;
@@ -138,14 +141,19 @@ border-radius: 44px;
 }
 
 .btn-container-card{
+  top:700px;
   border-radius: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn-card{
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
   border: none;
   z-index: 100;
-  position:absolute;
+
 }
 
 
