@@ -18,11 +18,15 @@ a {
   box-sizing: border-box;
 }
 
+.general-div {
+  background-color: white;
+}
+
 .header-container{
   margin: auto;
   width: 100%;
-  padding-left: 10;
-  padding-right: 10;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .navbar-container{
   display: flex;
@@ -79,21 +83,17 @@ a {
 .layout-container{
   background-color: #FEFAE0;
 
-  
+
 }
 
 .login-container{
-  
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
-  height: 100%;
+  height: 100vh;
   font-size: 12px;
-  
-  
-
+  background-color: white;
 }
 
 .footer{
@@ -102,12 +102,12 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
-  z-index: 100;  
+  z-index: 100;
 
 }
 
 .pi-instagram{
-  transition: transform .2s; 
+  transition: transform .2s;
 }
 
 .pi-instagram :hover{
@@ -125,7 +125,6 @@ a {
 
 .profile-image {
   max-width: 60%;
- 
   margin-bottom: 3rem;
   width: 362px;
   height: 604px;
@@ -145,9 +144,7 @@ a {
   position: relative;
   width: 462px;
   height: 604px;
-
   top: 4rem ;
-
   background: #D9D9D9;
   border-radius: 44px;
   display: flex;
@@ -180,7 +177,7 @@ a {
   width: 362px;
   height: 604px;
   margin: 3rem;
-  
+
   top: 228px;
   display: flex;
   justify-content: center;
@@ -207,11 +204,11 @@ border-radius: 44px;
   margin: 3rem;
   height: 3rem;
   width: 3rem;
-  
+
   justify-content: center;
   align-items: center;
   border: none;
- 
+
 
 }
 
@@ -233,7 +230,7 @@ border-radius: 44px;
   opacity: 0.5;
   display: flex;
   justify-content: center;
-  
+
 }
 
 .signup-container{
@@ -294,12 +291,7 @@ border-radius: 44px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  width: 643px;
-  height: 80%;
-  border-radius: 11px;
-  padding: 1rem 2rem;
-  font-size: 2ch;
+  width: 40%;
 }
 
 #availability {
@@ -311,15 +303,12 @@ border-radius: 44px;
   background-color: #FAEDCD;
   border-radius: 5px;
   border:none;
-  color:#46494C;
-  display: flex;
-  justify-content: bottom;
-  align-items: center;
-  vertical-align: center;
+  color: #000000;
   margin: 1rem;
   padding: 1rem 2rem;
+  width: 80%;
   opacity: 0.5;
-  font-size: 2ch;
+  font-size: 16px;
 }
 
 .login-btn{
@@ -327,16 +316,37 @@ border-radius: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   border: none;
   border-radius: 5px;
-  padding: 1.5rem 4rem 1.5rem 4rem;
+  padding: 1rem;
   margin-top: 20px;
-  min-width: 350 px;
-  height: 1 rem;
-  width: 5rem;
-  font-size: 2.5ch;
+  width: 80%;
+  font-size: 16px;
+  cursor: pointer;
+}
 
+.login-btn:hover{
+  box-shadow: 2px 2px;
+}
+
+.login-btn:active{
+  box-shadow: -2px -2px;
+}
+
+.login-sign-up-text {
+  color: black;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.login-sign-up-link {
+  color: #2f2f8b !important;
+  text-decoration: underline !important;
+}
+
+.login-sign-up-link:hover {
+  font-weight: bold;
 }
 
 #header{
