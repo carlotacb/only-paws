@@ -8,7 +8,7 @@ import { RadioButton } from 'primereact/radiobutton';
 import { Checkbox } from 'primereact/checkbox';
  
 
-import { InputTextarea } from 'primereact/inputtextarea';
+import { InputText} from 'primereact/InputText';
  // sorry misnamed this one this is actually login
 
 
@@ -17,22 +17,22 @@ const Signup = () => {
     <form className='signup-container'>
       <div className="left">
         <div id='column1' className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>          
-          <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Username" onChange="" required/>
-          <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Username" onChange="" required/>
+          <InputText className ="login-input" rows={2} cols={40} value="Type in your Username" onChange="" required/>
+          <InputText className ="login-input" rows={1.5} cols={40} value="Type in your Username" onChange="" required/>
           <div className ="radio-btn">
             <label className="radio" htmlFor="pet-owner">Pet Owner</label>
             <RadioButton className="radio" value='pet-owner' name="Pet Owner" onChange={(e) => ""}/>
             <label className="radio" htmlFor="pet-sitter">Pet Sitter</label>
             <RadioButton className="radio" value="pet-sitter" name="Pet Sitter" onChange={(e) => ""}  />
           </div>          
-          <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Username" onChange=""/>
-          <InputTextarea className ="login-input" rows={1.5} cols={40} value="Pet Type" onChange="" />
+          <InputText className ="login-input" rows={1.5} cols={40} value="Type in your Username" onChange=""/>
+          <InputText className ="login-input" rows={1.5} cols={40} value="Pet Type" onChange="" />
         </div>
       </div>
       <div className='right'>
         <div  className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>
             <Image src={Logo} alt="logo" height={220} width={260}/>
-            <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Email" onChange=""/>
+            <InputText className ="login-input" rows={1.5} cols={40} value="Type in your Email" onChange=""/>
             <div>
               <div className="checkbox-div">           
                 <Checkbox className="checkbox" value="Monday" onChange={e => ""}>Monday</Checkbox>       

@@ -13,7 +13,7 @@ const Profile = () => {
             <button classname='btn-card' style={{backgroundColor: '#F8333C'}}>
                 <i className='pi pi-check' style={{color : "white" , backgroundColor: '#F8333C'}}></i>
             </button>
-            <button classname='btn-card' style={{backgroundColor: '#F8333C'}}>
+            <button classname='btn-card' style={{backgroundColor: '#44AF69'}}>
                 <i className='pi pi-times' style={{color : "white" , backgroundColor: '#44AF69'}}></i>
             </button>
         </div>
