@@ -1,8 +1,7 @@
 const express = require('express')
 const app = express()
-const db = require('./models/db')
+const db = require('./db')
 const config = require('./config')
-const { Client } = require("pg");
 
 const BootstrapRouter = require('./routes')
 
@@ -21,13 +20,13 @@ function StartServer(app) {
     app.listen(config.port, function () {
         console.log(`Backend listening on port ${config.port}!`)
     })
-    //connectDBWithRetry()
+    connectDBWithRetry()
 }
 
-/*function connectDBWithRetry() {
+function connectDBWithRetry() {
     db.connect().catch(error => {
         console.error('Error connecting DB. Retrying in 3 seconds...')
         console.error(error)
         setTimeout(connectDBWithRetry, 3000)
     })
-}*/
+}
