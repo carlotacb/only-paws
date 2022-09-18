@@ -16,32 +16,52 @@ const Signup = () => {
   return (
     <form className='signup-container'>
       <div className="left">
-        <div  className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>
-          <Image src={Logo} alt="logo" height={160} width={200}/>
-          
-          <InputTextarea className ="login-input" rows={2} cols={40} value="Type in your Username" onChange="" required/>
-          <InputTextarea className ="login-input" rows={2} cols={40} value="Type in your Username" onChange="" required/>
+        <div id='column1' className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>          
+          <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Username" onChange="" required/>
+          <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Username" onChange="" required/>
           <div className ="radio-btn">
-            <RadioButton value='Pet Owner' name="Pet Owner" onChange={(e) => ""} />
-            <RadioButton value="Pet Sitter" name="Pet Sitter" onChange={(e) => ""}  />
-          </div>
-          
-          <InputTextarea className ="login-input" rows={2} cols={40} value="Type in your Username" onChange=""/>
-          <InputTextarea className ="login-input" rows={2} cols={40} value="Pet Type" onChange="" />
+            <label className="radio" htmlFor="pet-owner">Pet Owner</label>
+            <RadioButton className="radio" value='pet-owner' name="Pet Owner" onChange={(e) => ""}/>
+            <label className="radio" htmlFor="pet-sitter">Pet Sitter</label>
+            <RadioButton className="radio" value="pet-sitter" name="Pet Sitter" onChange={(e) => ""}  />
+          </div>          
+          <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Username" onChange=""/>
+          <InputTextarea className ="login-input" rows={1.5} cols={40} value="Pet Type" onChange="" />
         </div>
       </div>
       <div className='right'>
         <div  className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>
-            <Image src={Logo} alt="logo" height={160} width={200}/>
-            <InputTextarea className ="login-input" rows={2} cols={40} value="Type in your Email" onChange=""/>
-            <div className="checkbox">
-              <Checkbox value="Monday" onChange={e => ""}>Monday</Checkbox>
-              <Checkbox value="Tuesday" onChange={e => ""}>Tuesday</Checkbox>
-              <Checkbox value="Wednesday" onChange={e => ""}>Wednesday</Checkbox>
-              <Checkbox value="Thursday" onChange={e => ""}>Thursday</Checkbox>
-              <Checkbox value="Friday" onChange={e => ""}>Friday</Checkbox>
-              <Checkbox value="Saturday" onChange={e => ""}>Saturday</Checkbox>
-              <Checkbox value="Sunday" onChange={e => ""}>Sunday</Checkbox>
+            <Image src={Logo} alt="logo" height={220} width={260}/>
+            <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Email" onChange=""/>
+            <div>
+              <div className="checkbox-div">           
+                <Checkbox className="checkbox" value="Monday" onChange={e => ""}>Monday</Checkbox>       
+                <label htmlFor="Monday">Monday</label>
+              </div>
+              <div className="checkbox-div"> 
+                <Checkbox className="checkbox" value="Tuesday" onChange={e => ""}>Tuesday</Checkbox>
+                <label  htmlFor="Tuesday">Tuesday</label>
+              </div>
+              <div className="checkbox-div"> 
+                <Checkbox className="checkbox" value="Wednesday" onChange={e => ""}>Wednesday</Checkbox>
+                <label htmlFor="Wednesday">Wednesday</label>
+              </div>              
+              <div className="checkbox-div"> 
+                <Checkbox className="checkbox" value="Thursday" onChange={e => ""}>Thursday</Checkbox>
+                <label htmlFor="Thursday">Thursday</label>
+              </div>
+              <div className="checkbox-div"> 
+                <Checkbox className="checkbox" value="Friday" onChange={e => ""}>Friday</Checkbox>
+                <label htmlFor="Friday">Friday</label>
+              </div>
+              <div className="checkbox-div"> 
+                <Checkbox className="checkbox" value="Saturday" onChange={e => ""}>Saturday</Checkbox>
+                <label htmlFor="Saturday">Saturday</label>
+              </div>
+              <div className="checkbox-div"> 
+                <Checkbox className="checkbox" value="Sunday" onChange={e => ""}>Sunday</Checkbox>
+                <label htmlFor="Sunday">Sunday</label>
+              </div>
             </div>
             <Button className="login-btn" onClick="">Submit</Button>
             </div>
