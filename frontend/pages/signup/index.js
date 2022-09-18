@@ -14,7 +14,11 @@ import { InputTextarea } from 'primereact/inputtextarea';
 
 const Signup = () => {
   return (
-    <form className='signup-container'>
+    <form> 
+    <div className='signup-logo'>
+      <Image src={Logo} alt="logo" height={220} width={260}/>
+    </div>
+    <div className='signup-container'>
       <div className="left">
         <div id='column1' className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>          
           <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Username" onChange="" required/>
@@ -27,12 +31,12 @@ const Signup = () => {
           </div>          
           <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Username" onChange=""/>
           <InputTextarea className ="login-input" rows={1.5} cols={40} value="Pet Type" onChange="" />
+            <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Email" onChange=""/>
         </div>
       </div>
       <div className='right'>
         <div  className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>
-            <Image src={Logo} alt="logo" height={220} width={260}/>
-            <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Email" onChange=""/>
+              <label>Select Dates:</label>
             <div>
               <div className="checkbox-div">           
                 <Checkbox className="checkbox" value="Monday" onChange={e => ""}>Monday</Checkbox>       
@@ -63,10 +67,15 @@ const Signup = () => {
                 <label htmlFor="Sunday">Sunday</label>
               </div>
             </div>
-            <Button className="login-btn" onClick="">Submit</Button>
             </div>
-      </div>
+        </div>
+
+    </div>      
+    <div className='button-container'>
+        <Button className="login-btn" onClick="">Submit</Button>
+    </div>
     </form>
+     
   )
 }
 
