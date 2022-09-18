@@ -90,6 +90,7 @@ a {
   justify-content: center;
   margin-top: 4rem;
   height: 100%;
+  font-size: 12px;
   
   
 
@@ -101,6 +102,8 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
+  z-index: 100;
+  
 
   
 }
@@ -183,7 +186,7 @@ border-radius: 44px;
   justify-content: center;
   align-items: center;
   border: none;
-  z-index: 100;
+  z-index: 10;
 
 }
 
@@ -282,7 +285,7 @@ border-radius: 44px;
   align-items: center;
   vertical-align: center;
   margin: 1rem;
-  padding: 1rem 0rem 0rem 2.5rem;
+  padding: 1rem 2rem;
   opacity: 0.5;
   font-size: 2ch;
 }
