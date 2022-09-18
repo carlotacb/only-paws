@@ -7,13 +7,13 @@ import 'primeicons/primeicons.css';
 // this is the profile
 const Profile = () => {
   return (
-    <div className='profile-container'>
+    <div className='card-container'>
         <Image src={sample} alt="logo" />
-        <div className='btn-container-profile'>
-            <button classname='btn-profile' style={{backgroundColor: '#F8333C'}}>
+        <div className='btn-container-card'>
+            <button classname='btn-card' style={{backgroundColor: '#F8333C'}}>
                 <i className='pi pi-check' style={{color : "white" , backgroundColor: '#F8333C'}}></i>
             </button>
-            <button classname='btn-profile' style={{backgroundColor: '#F8333C'}}>
+            <button classname='btn-card' style={{backgroundColor: '#F8333C'}}>
                 <i className='pi pi-times' style={{color : "white" , backgroundColor: '#44AF69'}}></i>
             </button>
         </div>

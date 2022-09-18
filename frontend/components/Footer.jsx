@@ -4,7 +4,8 @@ import 'primeicons/primeicons.css';
 const Footer = () => {
   return (
     <div className='footer'>
-      <i className='pi pi-instagram'></i>
+      <i className='pi pi-instagram' style={{fontSize:"2rem"}}></i>
+      <p className="footer-text">OnlyPaws 2022</p>
     </div>
   )
 }
