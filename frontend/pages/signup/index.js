@@ -21,8 +21,8 @@ const Signup = () => {
     <div className='signup-container'>
       <div className="left">
         <div id='column1' className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>          
-          <InputText className ="login-input" placeholder="Type in your Username" onChange="" required/>
-          <InputText className ="login-input" placeholder="Type in your Username" onChange="" required/>
+          <InputText className ="login-input" placeholder="Type in your Email" onChange="" required/>
+          <InputText className ="login-input" placeholder="Type in your Password" onChange="" required/>
           <div className ="radio-btn">
             <label className="radio" htmlFor="pet-owner">Pet Owner</label>
             <RadioButton className="radio" value='pet-owner' name="Pet Owner" onChange={(e) => ""}/>
@@ -31,12 +31,12 @@ const Signup = () => {
           </div>          
           <InputText className ="login-input" placeholder="Type in your Username" onChange=""/>
           <InputText className ="login-input" placeholder="Pet Type" onChange="" />
-          <InputText className ="login-input"placeholder="Type in your Email" onChange=""/>
         </div>
       </div>
       <div className='right'>
         <div  className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>
-            <div>
+            <div>     
+              <label id='availability'>Availability:</label>
               <div className="checkbox-div">           
                 <Checkbox className="checkbox" value="Monday" onChange={e => ""}>Monday</Checkbox>       
                 <label htmlFor="Monday">Monday</label>

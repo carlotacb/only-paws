@@ -15,7 +15,7 @@ const Profile = () => {
           </div>
               
             <div className='card-container-right'>
-              <Image src={sample} alt="logo" />
+              <Image className='profile-image' src={sample} alt="logo" />
             </div>
     </div>
     

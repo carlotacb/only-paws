@@ -13,9 +13,9 @@ const Login = () => {
   return (
     <form className='login-container'>
       <Image src={Logo} alt="logo" height={150} width={230}/>
-      <div  className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>
-        <InputText className ="login-input" rows={1.5} cols={40} value="Type in your Email" onChange="" required/>
-        <InputText className ="login-input" rows={1.5} cols={40} value="Password goes here" onChange="" required/>
+      <div  className='login-box'>
+        <InputText className ="login-input" placeholder="Type in your Email" onChange="" required/>
+        <InputText className ="login-input" placeholder="Password goes here" onChange="" required/>
         <Button class="login-btn" label="Submit" height={150} width={250} onClick={handleSubmit}/>
    
       </div>
