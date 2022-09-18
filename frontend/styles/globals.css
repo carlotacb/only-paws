@@ -97,8 +97,8 @@ a {
 
 .footer{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 10rem;
 
@@ -122,8 +122,34 @@ a {
 
 }
 
+.card-container{
+  position: absolute;
+  width: 462px;
+  height: 704px;
+  left: 489px;
+  top: 228px;
 
+  background: #D9D9D9;
+  border-radius: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.layout{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  margin-right: 4rem;
+
+}
 .card-container-right{
   width: 362px;
   height: 604px;
@@ -141,6 +167,10 @@ background: #FAEDCD;
 border-radius: 44px;
 }
 
+.profile-heading{
+  color: #331d0a;
+  ;
+}
 .btn-container-card{
   top:700px;
   border-radius: 100%;
@@ -259,15 +289,19 @@ border-radius: 44px;
 
 .login-btn{
   background-color: #CCD5AE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 1.5rem 4rem 1.5rem 4rem;
   margin-top: 20px;
   min-width: 350 px;
-  height: 200 px;
-  width: 350 px;
-  font-size: 2.75ch;
+  height: 1 rem;
+  width: 5rem;
+  font-size: 2.5ch;
+
 }
 
 #header{

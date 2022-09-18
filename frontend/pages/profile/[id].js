@@ -8,7 +8,10 @@ const Profile = () => {
     <div className='profile-container'>
 
           <div className='card-container-left'>
-                ..
+                <h1 className='profile-heading'> UserName : ""</h1>
+                <h1 className='profile-heading'> Pet Type : ""</h1>
+                <h1 className='profile-heading'> Availability : ""</h1>
+                <h1 className='profile-heading'> Days Available : ""</h1>
           </div>
               
             <div className='card-container-right'>

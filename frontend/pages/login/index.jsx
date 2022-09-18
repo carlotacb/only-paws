@@ -16,7 +16,7 @@ const Login = () => {
       <div  className='login-box' style={{justifyItems: 'center',alignItems:'center'}}>
         <InputTextarea className ="login-input" rows={1.5} cols={40} value="Type in your Email" onChange="" required/>
         <InputTextarea className ="login-input" rows={1.5} cols={40} value="Password goes here" onChange="" required/>
-        <Button class="login-btn" label="Submit" height={200} width={350} onClick={handleSubmit}/>
+        <Button class="login-btn" label="Submit" height={150} width={250} onClick={handleSubmit}/>
    
       </div>
       </form>

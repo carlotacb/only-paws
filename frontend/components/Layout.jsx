@@ -10,8 +10,8 @@ const Layout = ({children}) => {
         <>
             <Header/>
             {children}
-            <Footer style={{fontSize:"3rem"}}/>
-            <p className="footer-text">OnlyPaws 2022</p>
+            <Footer />
+            
         </>
       )
 }
