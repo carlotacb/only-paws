@@ -7,12 +7,11 @@ module.exports = app => {
         const password = req.body.password
         const username = req.body.username.toLowerCase()
 
-        db.getUserPassword(username, password).then((response) => {
-            console.log(response)
-            if (response === "user not found") {
+        await db.getUserPassword(username, password).then((response) => {
+            if (response.length === 0) {
                 console.log('This user does not exists')
                 return res.status(403).send("the user does not exists")
-            } else if (response === "incorrect password") {
+            } else if (response[0].password !== password) {
                 console.log('The password was incorrect')
                 return res.status(401).send("incorrect password")
             } else {
@@ -51,4 +50,6 @@ module.exports = app => {
             return error
         })
     }))
+
+
 }

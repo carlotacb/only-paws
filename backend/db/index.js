@@ -16,23 +16,26 @@ async function connect() {
 }
 
 async function createNewUser(new_user) {
+  let repo
   const insertUserStatement =
       'INSERT INTO public.users (nickname, pet_name, name, user_type, pet_type, days, password) VALUES ($1, $2, $3, $4, $5, $6, $7);';
   try {
-    await dbConnection.query(insertUserStatement, new_user, callback);
+    await dbConnection.query(insertUserStatement, new_user);
   } catch (error) {
     return error.detail.toString()
   }
 }
 
 async function getUserPassword(username, password) {
+  let response
   const selectUserStatement =
       'SELECT * FROM public.users WHERE nickname = $1;';
   try {
-    await dbConnection.query(selectUserStatement, [username], callback);
+    response = await dbConnection.query(selectUserStatement, [username]);
   } catch (error) {
     return "username does not exists"
   }
+  return response.rows
 }
 
 async function createNewSession(session_information) {

@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 
 //add link to the personal profile of the user by extracting the user from the back-end
-// add a function for logging out 
+// add a function for logging out
 
 const Logout = () =>{
 
@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
         <p className='navbar-logo'>
-            <Link href="/"><Image src={Logo} alt="logo" height={100} width={120}/></Link>
+            <Link href="/"><Image src={Logo} alt="logo" height={80} width={120}/></Link>
         </p>
         <div className="btn-container">
             <Link href="/">
@@ -27,7 +27,7 @@ const Navbar = () => {
                 <i className='pi pi-sign-out'></i>
             </button>
         </div>
-        
+
     </div>
   )
 }
