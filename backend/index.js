@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const db = require('./db')
-const config = require('./config')
 
 const BootstrapRouter = require('./routes')
 
@@ -17,8 +16,8 @@ function BootstrapServer(app) {
 }
 
 function StartServer(app) {
-    app.listen(config.port, function () {
-        console.log(`Backend listening on port ${config.port}!`)
+    app.listen(8080, function () {
+        console.log(`Backend listening on port 8080!`)
     })
     connectDBWithRetry()
 }
